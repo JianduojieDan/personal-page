@@ -8,7 +8,7 @@
 !/index.html
 !/css/
 !/img/
-!/README.md  # 推荐豁免 README 文件
+!README.md  # 推荐豁免 README 文件
 
 # 2. 忽略上面没有被豁免的其他所有东西
 *
