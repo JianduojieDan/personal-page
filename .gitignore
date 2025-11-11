@@ -5,7 +5,7 @@
 # 1. 豁免我们绝对需要的文件和文件夹
 #    感叹号(!) 表示“不要忽略”。
 !/.gitignore
-!/index.html
+!/grid.html
 !/css/
 !/img/
 !README.md  # 推荐豁免 README 文件
@@ -15,6 +15,7 @@
 
 # 3. (可选但推荐) 明确列出需要忽略的开发文件
 #    这能让其他开发者清楚地知道哪些文件不该提交。
+.gemini/
 node_modules/
 .idea/
 .DS_Store
