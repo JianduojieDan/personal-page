@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 8</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/grid3.css" class="style"/>
+  </head>
+  <body>
+    <button onclick='switchStyle()' style='position: absolute; top:0; right:0; z-index: 1000;'>Style</button>
+    <img src='https://cdn.imgchest.com/files/6yxkcg9dp7w.png' style='position: absolute; top:0; left:0;z-index:-1'>
+    <div class="container">
+      <div class="box1">1</div>
+      <div class="box2">2</div>
+      <div class="box3">3</div>
+      <div class="box4">4</div>
+      <div class="box5">5</div>
+      <div class="box6">
+        <ul class="main_menu">
+            <li>Главная ></li>
+            <li>Новости ></li>
+            <li>Постановления Пленума Верховного суда КР ></li>
+            <li>Справка ></li>
+            <li>Служебный входs ></li>
+        </ul>
+      </div>
+      <div class="box7">7</div>
+      <div class="box8">8</div>
+
+      <script>
+        function switchStyle() {
+          let style = document.querySelector('.style');
+          if (style.getAttribute('href') == 'css/grid3.css'){
+            style.setAttribute('href', 'css/grid2.css');
+          } else {
+            style.setAttribute('href', 'css/grid3.css');
+          }
+        }
+      </script>
+      </div>
+  </body>
+</html>

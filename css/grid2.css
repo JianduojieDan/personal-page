@@ -15,7 +15,7 @@ body {
 
 .container{
     display: grid;
-    grid-template-rows: minmax(50px,auto) minmax(50px, 270px) minmax(50px, 127px) minmax(50px,  328px) minmax(50px, 165px);
+    grid-template-rows: minmax(50px,135px) minmax(50px, 270px) minmax(50px, 127px) minmax(50px,  328px) minmax(50px, 165px);
     grid-template-columns: minmax(20px, 90px) minmax(20px, 402px) minmax(20px, 223px) minmax(20px, 268px);
     grid-template-areas: 
       "one   six   six   six"
