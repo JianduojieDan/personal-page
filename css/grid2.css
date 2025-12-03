@@ -42,8 +42,12 @@ body {
     }
 }
 
-.logo {
-    display: none;
+.box1 img {
+    display: block;
+    max-width: 70px; 
+    height: auto;
+    margin-left: 10px;
+    margin-top: 45px;
 }
 
 .container > * {
