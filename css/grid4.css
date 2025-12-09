@@ -69,7 +69,7 @@ h3{
 }
 .box2 {
     grid-area: two;
-        background-image: url('https://cdn.imgchest.com/files/3367a429d1e8.png');
+        background-image: url('https://cdn.imgchest.com/files/fad11c8a8cde.png');
         background-size: cover; 
         background-position: center; 
         width: 100%;
@@ -86,32 +86,91 @@ h3{
 }
 .box4 {
     grid-area: four;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: end;
+    justify-content: end;
+    position: relative;
 }
 .box5 {
     grid-area: five;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 .box6 {
     grid-area: six;
 }
 .box7 {
     grid-area: seven;
+    background-image: url(https://cdn.imgchest.com/files/3dc47c32293a.png);
+    background-position: center;
+        width: 100%;
+        height: 100%;
 }
 .box8 {
     grid-area: eight;
 }
 
-#first{
-        display: flex;
-        list-style: none;
-        font-size: 1.6rem;
-        color: chartreuse;
-        justify-content: space-evenly;
-        align-items: center;
-        
+#first {
+    display: flex;
+    list-style: none;
+    color: green;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    flex-wrap: wrap;
 }
+
+#first li:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: 0px;
+    width: 40%;
+    text-align: left;
+    padding-left: 42px; 
+    margin-left: 42px;
+
+}
+
+#first li:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: 0px;
+    width: 50%;
+    text-align: right;
+    padding-right: 13px;
+}
+
+#first li:nth-child(3) {
+    font-size: 1.0rem;
+    font-weight: 10;
+    margin-top: 1px;
+    width: 45%;
+    text-align: left;
+    padding-left: 7.3%;
+}
+
+#first li:nth-child(4) {
+    font-size: 1.0rem;
+    font-weight: 10;
+    margin-top: 1px;
+    width: 35%;
+    text-align: left;
+    padding-left: 11px;
+}
+
+#first li:nth-child(5) {
+    font-size: 1.0rem;
+    font-weight: 10;
+    margin-top: -20px;
+    width: 65%;
+    text-align: right;
+}
+
 .box7 > h4{
     font-size: 1.0rem;
     font-weight: bold;
@@ -161,33 +220,41 @@ h3{
     white-space: nowrap;
 }
 
-
-.news{
-    font-size: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    list-style: none;
-    color: black;
-    height: 90%;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-#titleForNews{
-    display: block;
+#titleForNews {
+    position: absolute;
+    top: 0;
+    left: 0;
     font-size: 1.2rem;
     font-weight: bold;
     width: 100%;
-    margin-bottom: 10px;
     color: black;
-    position: relative;
-
+    margin-top: 0;
+    margin-left: 0;
 }
 
-.bottom_logo{
+.news {
+    opacity: 1;
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+    word-spacing: -1px;
+}
+
+.news li {
+    opacity: 1;
+    height: auto;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.bottom_act.sot{
     grid-column: 1;
     width: 5%;
     height: 33%;
@@ -240,14 +307,6 @@ h3{
 }
 
 
-
-
-
-
-
-
-
-
 .main_menu {
     display: flex;
     flex-direction: column;
@@ -281,5 +340,65 @@ h3{
 
 .main_menu li:last-child {
     border-bottom: none;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.box2 ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: auto;
+}
+
+.box2 ol li:nth-child(1) {
+    display: flex;
+    flex-wrap: wrap;
+    color: darkgoldenrod;
+    font-size: 1.12rem;
+    font-weight: 100;
+    width: auto;
+    text-align: center;
+    margin-bottom: 8px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.box2 ol li:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 0.87rem;
+    font-weight: 50;
+    width: auto;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 36px;
+}
+
+.box4 #time{
+    font-size: 0.9rem;
+    text-align: left;
+    margin-top: 10px;
+    color: black;
+    list-style: none;
+    display: none;
+}
+
+.box4 img{
+    width: 100%;
 }
 
