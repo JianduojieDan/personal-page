@@ -109,12 +109,13 @@ body {
 }
 
 .first_column span {
-    display: none;
+    display: flex;
     font-size: 1.0rem;
     font-weight: normal;
     color: black;
-    margin-top: 0px;
-    margin-left: 0;
+    position: absolute;
+    top: auto;
+    left: 7.7%;
 }
 
 .h5_tag {
@@ -444,6 +445,8 @@ h3 {
     flex-wrap: wrap;
     flex-direction: column;
     margin-top: auto;
+    position: relative;
+    z-index: 10;
 }
 
 .box2 ol li:nth-child(1) {
@@ -454,6 +457,7 @@ h3 {
     text-align: left;
     margin-bottom: 8px;
     margin-left: 5.2%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7), 0 0 5px rgba(255, 255, 255, 0.5);
 
 }
 
@@ -465,6 +469,7 @@ h3 {
     text-align: left;
     margin-left: 5.2%;
     margin-bottom: 36px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
 }
 
 .h5_tag p {
@@ -484,4 +489,36 @@ h3 {
 .box4 img{
     display: none;
 }
+
+.box6 img.language {
+    position: absolute;
+    top:4.5%;
+    right: 8%;
+    width: 80px;
+}
+
+.box3 img:nth-child(1) {
+    display: flex;
+    width: 7%;
+    position: absolute;
+    top: 38%;
+    left: 3.5%;
+}
+
+.box3 img:nth-child(2) {
+    display: flex;
+    width: 7.5%;
+    position: absolute;
+    top: 38%;
+    left: 49.5%;
+}
+
+.box2 img{
+    display: flex;
+    width: 91%;
+    position: absolute;
+    top: 12%;
+    left: 1.5%;
+}
+
 

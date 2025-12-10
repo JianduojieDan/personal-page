@@ -42,7 +42,7 @@ body > img {
 
 @media (max-width: 500px) {
     .container {
-        grid-template-rows: repeat(8, auto);
+        grid-template-rows: repeat(8, auto);               
         grid-template-columns: 100%;
         grid-template-areas:
             "one"
@@ -402,3 +402,22 @@ h3{
     width: 100%;
 }
 
+.box3 img:nth-child(1) {
+    display: none;
+}
+
+.box3 img:nth-child(2) {
+    display: none;
+}
+
+.box6 img.language {
+    display: none;
+}
+
+.box2 img{
+    display: none;
+    width: 7.5%;
+    position: absolute;
+    top: 38%;
+    left: 49.5%;
+}
