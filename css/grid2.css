@@ -63,10 +63,12 @@ body {
     grid-area: two;
     display: flex; 
     flex-direction: column;
+    position: relative;
 }
 
 .box3 {
     grid-area: three;
+    position: relative;
 }
 
 
@@ -96,6 +98,7 @@ body {
     align-items: flex-start;
     padding-top: 20px;
     padding-left: 10px;
+    position: relative;
 }
 
 .box5 .first_column img[class='bottom_act.sot'] { 
@@ -113,9 +116,9 @@ body {
     font-size: 1.0rem;
     font-weight: normal;
     color: black;
-    position: absolute;
-    top: auto;
-    left: 7.7%;
+    position: absolute;    
+    top: 18px;
+    left: 29%;
 }
 
 .h5_tag {
@@ -166,6 +169,7 @@ body {
     align-items: flex-start;
     padding-top: 23px;
     padding-left: 14px;
+    position: relative;
 }
 
 .box7 {
@@ -492,33 +496,34 @@ h3 {
 
 .box6 img.language {
     position: absolute;
-    top:4.5%;
-    right: 8%;
     width: 80px;
+    top: 50px;
+    right: 20px;
 }
 
 .box3 img:nth-child(1) {
     display: flex;
-    width: 7%;
+    width: 70px;
     position: absolute;
-    top: 38%;
+    top: 29%;
     left: 3.5%;
 }
 
 .box3 img:nth-child(2) {
     display: flex;
-    width: 7.5%;
+    width: 70px;
     position: absolute;
-    top: 38%;
-    left: 49.5%;
+    top: 28.1%;
+    right: 40%;
 }
 
 .box2 img{
     display: flex;
-    width: 91%;
+    width: 940px;
     position: absolute;
-    top: 12%;
-    left: 1.5%;
+    top: 0%;
+    left: 2.1%;
+    z-index: 5;
 }
 
 
