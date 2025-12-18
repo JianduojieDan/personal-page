@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final project</title>
+    <link rel="stylesheet" href="style.css" class="style"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <button onclick="toggleTheme()" style="position: fixed; top: 0; z-index: 9999;">Switch Style</button>
+    <div id="hamburger" onclick="toggleMenu()">☰</div>
+    <img src='https://cdn.imgchest.com/files/6yxkcg9dp7w.png' style='position: absolute; top:0; left:0;z-index:-1'>
+    <div class="container">
+      <div class="box1">
+        <img src='https://cdn.imgchest.com/files/a3c17d51899f.png' alt="act.sot" class="logo">
+      </div>
+      <div class="box2">
+        <ol>
+          <li>Судебные акты и судебные дела</li>
+          <li>Подробная информация о судебных делах и актах. Поиск судебных дел и актов</li>
+        </ol>
+        <img src="https://cdn.imgchest.com/files/ff1c708d3db6.png">
+      </div>
+      <div class="box3">
+        <img src='https://cdn.imgchest.com/files/f276fae6b296.png' alt="act.sot">
+        <img src='https://cdn.imgchest.com/files/c23510d0ff85.png' alt="act.sot">
+        <ol id="first">
+            <li>Заседания</li>
+            <li>Поиск судебных дел и актов</li>
+            <li>Поиск заседаний судов</li>
+            <li>В этом разделе можно найти все судебные </li>
+            <li>дела и акты</li>
+        </ol>
+      </div>
+      <div class="box4">
+        <h4 id = 'titleForNews'>Новости</h4>
+        <ol id = 'time'>
+            <li>05.11.18</li>
+            <li>25.10.17</li>
+            <li>21.10.17</li>
+            <li>15.10.17</li>
+        </ol>
+        <img src='https://cdn.imgchest.com/files/2fe2f9f534af.png' alt="line">
+        <ol class='news'>
+            <li>Статистика публикаций за ( 01.01.2018 - 31.10.2018)</li>
+            <li>В Узбекистане проходит совещание председателей Верховных судов стран-участниц ШОС</li>
+            <li>Впервые в истории независимого Кыргызстана сотрудники судебной системы получат квартиры</li>
+            <li>Айнаш Токбаева Председатель Верховного суда Кыргызской Республики: «Голосование - гражданский долг человека»</li>
+        </ol>
+      </div>
+      <div class="box5">
+        <div class='first_column'>
+            <img src='https://cdn.imgchest.com/files/6a81a96f58f9.png' class = 'bottom_act.sot' alt="logo">
+          <span>
+            act.sot.kg
+        </span>  
+        </div>    
+        
+        <div class = 'h5_tag'>    
+            <h5>Обратиться в службу технической поддержки</h5>
+                <div>
+                    <p>
+                        Данный веб-сайт стал возможным благодаря помощи американского народа, оказанной через Агентство США по международному развитию (USAID). Судья несет ответственность за идентичность содержимого актов. Содержание веб-сайта не обязательно отражает позицию USAID или Правительства США.
+                    </p>
+                </div>
+        </div>
+        <div class="column_three">
+            <img src='https://cdn.imgchest.com/files/7253f1d226a4.png' alt="logo">
+        </div>        
+      </div>
+      <div class="box6">
+        <img src='https://cdn.imgchest.com/files/22110af322dd.png' class = 'language' alt="logo">
+        <ul class="main_menu">
+          <h3>Судебные акты и заседания</h3>
+            <li>Главная</li>
+            <li>Новости</li>
+            <li>Постановления Пленума Верховного суда КР</li>
+            <li>Справка</li>
+            <li>Служебный вход</li>
+        </ul>
+      </div>
+      <div class="box7">
+        <h4>ВРЕМЯ РАБОТЫ САЙТА</h4>
+        <ol>
+            <li><span class ='numBox'>9</span> лет</li>
+            <li><span class ='numBox'>11</span> месяцев</li>
+        </ol>
+      </div>
+      <div class="box8">
+        <h4 id = 'second_h4'>ОПУБЛИКОВАНО</h4>
+        <ol>
+            <li><span class ='numBox'>357929</span>дел</li>
+            <li><span class ='numBox'>334297</span>актов</li>
+            <li><span class = 'numBox'>565383</span>заседаний</li>
+        </ol>
+      </div>
+      </div>
+        <script>
+        function toggleTheme() {
+            var theme = document.getElementsByTagName('link')[0];
+            if (theme.getAttribute('href') == 'style.css') {
+             theme.setAttribute('href', 'style2.css');
+            } else {
+                theme.setAttribute('href', 'style.css');
+            }
+        }
+
+        function toggleMenu() {
+            var menu = document.querySelector('.main_menu');
+            menu.classList.toggle('show');
+        }
+
+</script>
+  </body>
+</html>
